@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>FurnScapes</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold">Welcome to FurnScapes</h1>
+            <p class="text-lg mt-2">Your architectural design partner</p>
+        </header>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p class="mb-4">We specialize in creating innovative architectural designs that blend functionality with aesthetics.</p>
+            <a href="about.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</a>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Residential Architecture</li>
+                <li>Commercial Architecture</li>
+                <li>Interior Design</li>
+                <li>Landscape Design</li>
+            </ul>
+            <a href="services.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View Services</a>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-4">Get in touch with us to discuss your project.</p>
+            <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Contact Now</a>
+        </section>
+
+        <section class="text-center">
+            <button id="book-appointment" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 text-lg">
+                Book Your Appointment Now!
+            </button>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('book-appointment').addEventListener('click', function() {
+            window.location.href = 'form.html';
+        });
+    </script>
+
+</body>
+</html>
